@@ -1,0 +1,216 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Bugonia review – Emma Stone might be an alien in Yorgos Lanthimos&#x27;s macabre conspiracy theory comedy
+
+Peter Bradshaw
+The Guardian
+Thu 28 Aug 2025
+
+Yorgos Lanthimos&#x27;s <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">macabre and amusing new film</span> has a <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">predictably strong performance</span> from Emma Stone, an <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">intestine-shreddingly clamorous orchestral score</span> from Jerskin Fendrix and, most importantly, a <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">wonderful montage finale</span> – but frankly it&#x27;s a <span class="lx-highlight" data-idx="4" style="background-color:#D2E3FC;">very, very long run-up to that big jump</span>.
+
+Added to which, there is the question of whether this <span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">bizarre if sometimes heavy-handed black comedy</span> has fully earned its eventual pivot to serious tragic issues in the ending. Does the globally traumatised finale succeed in retrospectively upgrading the significance of what has preceded it? Do these avowedly important images and moods quite match up with the single-joke-single-punchline movie with all its violent slapstick grotesquerie that went before?
+
+Working with screenwriter Will Tracy, Lanthimos has remade the 2003 Korean film Save the Green Planet!, changing the gender of the corporate character. Audiences might also be reminded of the great Danish provocateur Lars von Trier by the <span class="lx-highlight" data-idx="6" style="background-color:#D2E3FC;">tongue-in-cheek portentous chapter headings</span>, or even M Night Shyamalan&#x27;s <span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;">widely derided mystery drama</span> The Happening from 2008, which features the disappearance of honeybees.
+
+The title refers to a myth about bees emerging from a dead ox; our <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">seething antihero</span> Teddy, played by Jesse Plemons, is a beekeeper, devastated by the progressive loss of the honeybee population and blaming this on eco-violence caused by a vast retail/pharmaceutical conglomerate run by <span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">dead-eyed corporate ice queen</span> Michelle, played by Stone. Her company also <span class="lx-highlight" data-idx="10" style="background-color:#D2E3FC;">gravely injured</span> Teddy&#x27;s <span class="lx-highlight" data-idx="11" style="background-color:#D2E3FC;">troubled mother</span>, Sandy, played by Alicia Silverstone, with its experimental opioid withdrawal drugs.
+
+Mistrustful of mainstream media, Teddy has been doing his own research on the internet about capitalism and elitist conspiracies, and he now believes that Michelle is an <span class="lx-highlight" data-idx="12" style="background-color:#D2E3FC;">evil space alien</span>. With his trusting, innocent cousin (played by Aidan Delbis) he sets out to kidnap and torture Michelle in his basement until she and her fellow Andromedans promise to leave earthlings alone.
+
+Stone is <span class="lx-highlight" data-idx="13" style="background-color:#D2E3FC;">lethally cold and heartless</span> as Michelle; she gets up at 4.30am every day for various workouts and comes in to the office to assure her cowed staff that – after bad publicity about an overwork-related crisis – they can leave work at 5.30pm if they really think they have earned it. Her seven-stages-of-grief-type reaction to finding herself chained to a bed in a scuzzy house cycles through imperious demands and threats, wary diplomacy, pleading, followed by humouring Teddy by agreeing that, sure, yes, OK, she&#x27;s an alien. (Although for all its confrontational gross out, the film flinches from the lavatorial realities of her imprisonment.)
+
+Plemons himself delivers an <span class="lx-highlight" data-idx="14" style="background-color:#D2E3FC;">efficient punch</span> as the fanatical Teddy and there is something <span class="lx-highlight" data-idx="15" style="background-color:#D2E3FC;">subtle and unexpected</span> in his relationship with the local cop Casey (Stavros Halkias) who comes to see him, inhibited in his investigation by some painful shared memories of their childhood.
+
+Bugonia is a <span class="lx-highlight" data-idx="16" style="background-color:#D2E3FC;">very well made film</span>, and while it is not true to say it is less than the sum of its parts, it is <span class="lx-highlight" data-idx="17" style="background-color:#D2E3FC;">less than that final and very powerful part</span>. Like Ari Aster&#x27;s recent film Eddington, it also shows how <span class="lx-highlight" data-idx="18" style="background-color:#D2E3FC;">difficult it is to make internet conspiracy obsession interesting</span>. For me, Bugonia <span class="lx-highlight" data-idx="19" style="background-color:#D2E3FC;">doesn&#x27;t have the ingenuity and elegance</span> of Lanthimos&#x27;s previous film Kinds of Kindness, <span class="lx-highlight" data-idx="20" style="background-color:#D2E3FC;">nor the emotional generosity and audacity</span> of his steampunk fantasia Poor Things. It&#x27;s a <span class="lx-highlight" data-idx="21" style="background-color:#D2E3FC;">spiny, prickly, hothouse flower</span>.
+
+Bugonia screened at the Venice film festival and is in UK and Irish cinemas from 31 October.
+
+
+&quot;&quot;&quot;
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="21" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/22</span> |
+          Pos <span id="posInfo">[181-209]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "macabre and amusing new film", "color": "#D2E3FC", "startPos": 181, "endPos": 209, "beforeText": " Emma Stone might be an alien in Yorgos Lanthimos&#x27;s macabre conspiracy theory comedy\n\nPeter Bradshaw\nThe Guardian\nThu 28 Aug 2025\n\nYorgos Lanthimos&#x27;s ", "extractionText": "macabre and amusing new film", "afterText": " has a predictably strong performance from Emma Stone, an intestine-shreddingly clamorous orchestral score from Jerskin Fendrix and, most importantly,", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">macabre and amusing</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "predictably strong performance", "color": "#D2E3FC", "startPos": 216, "endPos": 246, "beforeText": "rgos Lanthimos&#x27;s macabre conspiracy theory comedy\n\nPeter Bradshaw\nThe Guardian\nThu 28 Aug 2025\n\nYorgos Lanthimos&#x27;s macabre and amusing new film has a ", "extractionText": "predictably strong performance", "afterText": " from Emma Stone, an intestine-shreddingly clamorous orchestral score from Jerskin Fendrix and, most importantly, a wonderful montage finale \u2013 but fra", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">strong</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "intestine-shreddingly clamorous orchestral score", "color": "#D2E3FC", "startPos": 267, "endPos": 315, "beforeText": "Peter Bradshaw\nThe Guardian\nThu 28 Aug 2025\n\nYorgos Lanthimos&#x27;s macabre and amusing new film has a predictably strong performance from Emma Stone, an ", "extractionText": "intestine-shreddingly clamorous orchestral score", "afterText": " from Jerskin Fendrix and, most importantly, a wonderful montage finale \u2013 but frankly it&#x27;s a very, very long run-up to that big jump.\n\nAdded to which,", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">score</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">intestine-shreddingly clamorous</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "wonderful montage finale", "color": "#D2E3FC", "startPos": 362, "endPos": 386, "beforeText": "s a predictably strong performance from Emma Stone, an intestine-shreddingly clamorous orchestral score from Jerskin Fendrix and, most importantly, a ", "extractionText": "wonderful montage finale", "afterText": " \u2013 but frankly it&#x27;s a very, very long run-up to that big jump.\n\nAdded to which, there is the question of whether this bizarre if sometimes heavy-hande", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">finale</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">wonderful</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "very, very long run-up to that big jump", "color": "#D2E3FC", "startPos": 408, "endPos": 447, "beforeText": "tone, an intestine-shreddingly clamorous orchestral score from Jerskin Fendrix and, most importantly, a wonderful montage finale \u2013 but frankly it&#x27;s a ", "extractionText": "very, very long run-up to that big jump", "afterText": ".\n\nAdded to which, there is the question of whether this bizarre if sometimes heavy-handed black comedy has fully earned its eventual pivot to serious", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">run-up</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">very, very long</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "bizarre if sometimes heavy-handed black comedy", "color": "#D2E3FC", "startPos": 504, "endPos": 550, "beforeText": "ntly, a wonderful montage finale \u2013 but frankly it&#x27;s a very, very long run-up to that big jump.\n\nAdded to which, there is the question of whether this ", "extractionText": "bizarre if sometimes heavy-handed black comedy", "afterText": " has fully earned its eventual pivot to serious tragic issues in the ending. Does the globally traumatised finale succeed in retrospectively upgrading", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">black comedy</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">bizarre if sometimes heavy-handed</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "tongue-in-cheek portentous chapter headings", "color": "#D2E3FC", "startPos": 1149, "endPos": 1192, "beforeText": "Green Planet!, changing the gender of the corporate character. Audiences might also be reminded of the great Danish provocateur Lars von Trier by the ", "extractionText": "tongue-in-cheek portentous chapter headings", "afterText": ", or even M Night Shyamalan&#x27;s widely derided mystery drama The Happening from 2008, which features the disappearance of honeybees.\n\nThe title refers t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">chapter headings</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">tongue-in-cheek portentous</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "widely derided mystery drama", "color": "#D2E3FC", "startPos": 1222, "endPos": 1250, "beforeText": "might also be reminded of the great Danish provocateur Lars von Trier by the tongue-in-cheek portentous chapter headings, or even M Night Shyamalan&#x27;s ", "extractionText": "widely derided mystery drama", "afterText": " The Happening from 2008, which features the disappearance of honeybees.\n\nThe title refers to a myth about bees emerging from a dead ox; our seething ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">mystery drama</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">widely derided</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "seething antihero", "color": "#D2E3FC", "startPos": 1391, "endPos": 1408, "beforeText": "ery drama The Happening from 2008, which features the disappearance of honeybees.\n\nThe title refers to a myth about bees emerging from a dead ox; our ", "extractionText": "seething antihero", "afterText": " Teddy, played by Jesse Plemons, is a beekeeper, devastated by the progressive loss of the honeybee population and blaming this on eco-violence caused", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">antihero</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">seething</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "dead-eyed corporate ice queen", "color": "#D2E3FC", "startPos": 1611, "endPos": 1640, "beforeText": "stated by the progressive loss of the honeybee population and blaming this on eco-violence caused by a vast retail/pharmaceutical conglomerate run by ", "extractionText": "dead-eyed corporate ice queen", "afterText": " Michelle, played by Stone. Her company also gravely injured Teddy&#x27;s troubled mother, Sandy, played by Alicia Silverstone, with its experimental opioi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">corporate ice queen</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">dead-eyed</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "gravely injured", "color": "#D2E3FC", "startPos": 1685, "endPos": 1700, "beforeText": " on eco-violence caused by a vast retail/pharmaceutical conglomerate run by dead-eyed corporate ice queen Michelle, played by Stone. Her company also ", "extractionText": "gravely injured", "afterText": " Teddy&#x27;s troubled mother, Sandy, played by Alicia Silverstone, with its experimental opioid withdrawal drugs.\n\nMistrustful of mainstream media, Teddy ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">mother</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">gravely injured</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "troubled mother", "color": "#D2E3FC", "startPos": 1709, "endPos": 1724, "beforeText": "by a vast retail/pharmaceutical conglomerate run by dead-eyed corporate ice queen Michelle, played by Stone. Her company also gravely injured Teddy&#x27;s ", "extractionText": "troubled mother", "afterText": ", Sandy, played by Alicia Silverstone, with its experimental opioid withdrawal drugs.\n\nMistrustful of mainstream media, Teddy has been doing his own r", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">mother</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">troubled</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "evil space alien", "color": "#D2E3FC", "startPos": 1981, "endPos": 1997, "beforeText": "tream media, Teddy has been doing his own research on the internet about capitalism and elitist conspiracies, and he now believes that Michelle is an ", "extractionText": "evil space alien", "afterText": ". With his trusting, innocent cousin (played by Aidan Delbis) he sets out to kidnap and torture Michelle in his basement until she and her fellow Andr", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Michelle</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">evil space alien</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "lethally cold and heartless", "color": "#D2E3FC", "startPos": 2200, "endPos": 2227, "beforeText": " Delbis) he sets out to kidnap and torture Michelle in his basement until she and her fellow Andromedans promise to leave earthlings alone.\n\nStone is ", "extractionText": "lethally cold and heartless", "afterText": " as Michelle; she gets up at 4.30am every day for various workouts and comes in to the office to assure her cowed staff that \u2013 after bad publicity abo", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Michelle</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">lethally cold and heartless</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "efficient punch", "color": "#D2E3FC", "startPos": 2872, "endPos": 2887, "beforeText": ". (Although for all its confrontational gross out, the film flinches from the lavatorial realities of her imprisonment.)\n\nPlemons himself delivers an ", "extractionText": "efficient punch", "afterText": " as the fanatical Teddy and there is something subtle and unexpected in his relationship with the local cop Casey (Stavros Halkias) who comes to see h", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Plemons</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">efficient punch</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "subtle and unexpected", "color": "#D2E3FC", "startPos": 2934, "endPos": 2955, "beforeText": "inches from the lavatorial realities of her imprisonment.)\n\nPlemons himself delivers an efficient punch as the fanatical Teddy and there is something ", "extractionText": "subtle and unexpected", "afterText": " in his relationship with the local cop Casey (Stavros Halkias) who comes to see him, inhibited in his investigation by some painful shared memories o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">relationship</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">subtle and unexpected</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "very well made film", "color": "#D2E3FC", "startPos": 3138, "endPos": 3157, "beforeText": "al cop Casey (Stavros Halkias) who comes to see him, inhibited in his investigation by some painful shared memories of their childhood.\n\nBugonia is a ", "extractionText": "very well made film", "afterText": ", and while it is not true to say it is less than the sum of its parts, it is less than that final and very powerful part. Like Ari Aster&#x27;s recent fil", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Bugonia</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">very well made</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "less than that final and very powerful part", "color": "#D2E3FC", "startPos": 3235, "endPos": 3278, "beforeText": "ul shared memories of their childhood.\n\nBugonia is a very well made film, and while it is not true to say it is less than the sum of its parts, it is ", "extractionText": "less than that final and very powerful part", "afterText": ". Like Ari Aster&#x27;s recent film Eddington, it also shows how difficult it is to make internet conspiracy obsession interesting. For me, Bugonia doesn&#x27;t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Bugonia</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">less than that final and very powerful part</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "difficult it is to make internet conspiracy obsession interesting", "color": "#D2E3FC", "startPos": 3338, "endPos": 3403, "beforeText": "ay it is less than the sum of its parts, it is less than that final and very powerful part. Like Ari Aster&#x27;s recent film Eddington, it also shows how ", "extractionText": "difficult it is to make internet conspiracy obsession interesting", "afterText": ". For me, Bugonia doesn&#x27;t have the ingenuity and elegance of Lanthimos&#x27;s previous film Kinds of Kindness, nor the emotional generosity and audacity of", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">internet conspiracy obsession</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">difficult to make interesting</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "doesn't have the ingenuity and elegance", "color": "#D2E3FC", "startPos": 3421, "endPos": 3460, "beforeText": "ul part. Like Ari Aster&#x27;s recent film Eddington, it also shows how difficult it is to make internet conspiracy obsession interesting. For me, Bugonia ", "extractionText": "doesn&#x27;t have the ingenuity and elegance", "afterText": " of Lanthimos&#x27;s previous film Kinds of Kindness, nor the emotional generosity and audacity of his steampunk fantasia Poor Things. It&#x27;s a spiny, prickl", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Bugonia</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">ingenuity and elegance</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "nor the emotional generosity and audacity", "color": "#D2E3FC", "startPos": 3509, "endPos": 3550, "beforeText": "ke internet conspiracy obsession interesting. For me, Bugonia doesn&#x27;t have the ingenuity and elegance of Lanthimos&#x27;s previous film Kinds of Kindness, ", "extractionText": "nor the emotional generosity and audacity", "afterText": " of his steampunk fantasia Poor Things. It&#x27;s a spiny, prickly, hothouse flower.\n\nBugonia screened at the Venice film festival and is in UK and Irish c", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Bugonia</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">emotional generosity and audacity</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "spiny, prickly, hothouse flower", "color": "#D2E3FC", "startPos": 3597, "endPos": 3628, "beforeText": " and elegance of Lanthimos&#x27;s previous film Kinds of Kindness, nor the emotional generosity and audacity of his steampunk fantasia Poor Things. It&#x27;s a ", "extractionText": "spiny, prickly, hothouse flower", "afterText": ".\n\nBugonia screened at the Venice film festival and is in UK and Irish cinemas from 31 October.\n\n\n&quot;&quot;&quot;", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Bugonia</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">spiny, prickly, hothouse flower</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
