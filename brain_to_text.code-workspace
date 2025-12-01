@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../brain_to_text"
+		},
+		{
+			"path": "../Desktop/1141datamining/Lab1/DM2025Labs/DM2025-Lab1-Exercise"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
